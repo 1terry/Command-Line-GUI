@@ -1,16 +1,16 @@
 #include "header.h"
 
+
 //INSTALL ON LINUX!!!!!
 
 int main()
 {
- 
 }
 
 class Command {
     private:
         int returnCode = 0;
-        string commandText;
+        string commandText = "";
         string result = "";
 
     Command(commandText){
