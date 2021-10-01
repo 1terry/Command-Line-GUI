@@ -6,7 +6,9 @@
                 "${workspaceFolder}/**",
                 "/usr/include/linux",
                 "/usr/lib/gcc/x86_64-linux-gnu/9/include",
-                "/usr/include/x86_64-linux-gnu/c++/9/bits"
+                "/usr/include/x86_64-linux-gnu/c++/9/bits",
+                "/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+                "/usr/include/x86_64-linux-gnu/qt5"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

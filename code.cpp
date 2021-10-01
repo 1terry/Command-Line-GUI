@@ -13,11 +13,11 @@ class Command {
         string commandText = "";
         string result = "";
 
-    Command(commandText){
-
+    Command(string commandToExecute){
+        commandText = commandToExecute;
     }
     ~Command() {
-
+        //Do something?
     }
 
     int execute() {
@@ -37,16 +37,16 @@ class Command {
         return returnCode;
     }
 
-    String returnCommandText(){
+    string returnCommandText(){
         return commandText;
     }
 
-    String returnResult(){
-        return resultl;
+    string returnResult(){
+        return result;
     }
 
-    void setCommandText(String text){
-        //this.commandText = text
+    void setCommandText(string text){
+        commandText = text;
     }
 
 };
