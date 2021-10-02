@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QPushButton>
-#include <QLabel>
 
 namespace Ui {
   class MainWindow;

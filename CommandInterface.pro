@@ -1,4 +1,6 @@
 QT       += core widgets
-TEMPLATE app
-SOURCES += interface.cpp
-HEADERS += interfaceHeader.h
+TARGET = CommandGUI
+TEMPLATE = app 
+SOURCES += interface.cpp interface.cpp code.cpp 
+HEADERS += interfaceHeader.h header.h
+LIBS += -lboost_thread -lpthread 
