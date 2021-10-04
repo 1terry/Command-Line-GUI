@@ -1,4 +1,5 @@
-//#include <boost/array.hpp>
+#ifndef HEADER_H
+#define HEADER_H
 
 #include <boost/process.hpp>
 #include <string>
@@ -8,16 +9,18 @@ using namespace boost::process;
 using std::string; 
 
 class Command {
-    public:
+    private:
         int returnCode;
         string commandText;
         string result;
-
+    public:
         Command(string commandToExecute);
         ~Command();
-        int execute() {return returnCode;}
-        int getReturnCode() {return returnCode;}
-        string returnCommandText() {return commandText;}
-        string returnResult() {return result;}
+        int execute(); 
+        int getReturnCode();
+        string returnCommandText();
+        string returnResult();
         void setCommandText(string text);
 };      
+
+#endif 
