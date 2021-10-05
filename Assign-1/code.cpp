@@ -1,6 +1,8 @@
 #include "header.h"
 
+//Make sure to change namespaces
 //INSTALL ON LINUX!!!!!
+using namespace boost::process;
 
 Command::Command(string commandToExecute){
     commandText = commandToExecute;
@@ -21,7 +23,6 @@ int Command::execute() {
             std::cerr << line << std::endl;
             result = result + "\n" + line;
         }
-        // std::cout << line << std::endl;
         c.wait();
     }
     
@@ -42,7 +43,7 @@ string Command::returnCommandText(){
 }
 
 string Command::returnResult(){
-    std::cout << result << std::endl;
+    // std::cout << result << std::endl;
     return result;
 }
 

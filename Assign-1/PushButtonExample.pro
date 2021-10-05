@@ -1,5 +1,5 @@
 QT       += core widgets
-TARGET = PushButtonExample
+TARGET = CommandInterface
 TEMPLATE = app 
 SOURCES += main.cpp mainwindow.cpp code.cpp
 HEADERS += mainwindow.h header.h
