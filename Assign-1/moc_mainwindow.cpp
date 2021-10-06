@@ -32,15 +32,15 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 12), // "handleButton"
-QT_MOC_LITERAL(2, 24, 0), // ""
-QT_MOC_LITERAL(3, 25, 11), // "itemClicked"
-QT_MOC_LITERAL(4, 37, 16), // "QListWidgetItem*"
-QT_MOC_LITERAL(5, 54, 4) // "item"
+QT_MOC_LITERAL(1, 11, 11), // "itemClicked"
+QT_MOC_LITERAL(2, 23, 0), // ""
+QT_MOC_LITERAL(3, 24, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(4, 41, 4), // "item"
+QT_MOC_LITERAL(5, 46, 12) // "handleButton"
 
     },
-    "MainWindow\0handleButton\0\0itemClicked\0"
-    "QListWidgetItem*\0item"
+    "MainWindow\0itemClicked\0\0QListWidgetItem*\0"
+    "item\0handleButton"
 };
 #undef QT_MOC_LITERAL
 
@@ -58,12 +58,12 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   24,    2, 0x08 /* Private */,
-       3,    1,   25,    2, 0x08 /* Private */,
+       1,    1,   24,    2, 0x08 /* Private */,
+       5,    0,   27,    2, 0x08 /* Private */,
 
  // slots: parameters
+    QMetaType::Void, 0x80000000 | 3,    4,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 4,    5,
 
        0        // eod
 };
@@ -74,8 +74,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->handleButton(); break;
-        case 1: _t->itemClicked((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
+        case 0: _t->itemClicked((*reinterpret_cast< QListWidgetItem*(*)>(_a[1]))); break;
+        case 1: _t->handleButton(); break;
         default: ;
         }
     }

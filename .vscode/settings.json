@@ -64,6 +64,7 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "bit": "cpp",
-        "qlistwidget": "cpp"
+        "qlistwidget": "cpp",
+        "qaccessibletextinterface": "cpp"
     }
 }

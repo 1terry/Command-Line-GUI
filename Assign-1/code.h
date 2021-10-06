@@ -1,3 +1,10 @@
+/*
+Author: Terrence Ju
+Header file for backend code
+Oct 5, 2021
+*/
+
+
 #ifndef HEADER_H
 #define HEADER_H
 
@@ -7,12 +14,14 @@
 
 using std::string; 
 
-class Command {
-    private:
+class Command { //Defines class
+   
+    private: //Defines data members of class
         int returnCode;
         string commandText;
         string result;
-    public:
+    
+    public: //Defines methods
         Command(string commandToExecute);
         ~Command();
         int execute(); 
